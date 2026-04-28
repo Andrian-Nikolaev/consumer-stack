@@ -1,8 +1,12 @@
-stack "private-registry-stack" {
-    source = "app.terraform.io/onboarding-terraform-andrian/private-registry-stack"
-    version = "1.2.0"
+variable "prefix" {
+  type = string
+}
 
-    inputs = {
-        prefix = "test"
-    }
+stack "private-registry-stack" {
+  source  = "onboarding-terraform-andrian/private-registry-stack"
+  version = "1.3.0"
+
+  inputs = {
+    prefix = var.prefix
+  }
 }
