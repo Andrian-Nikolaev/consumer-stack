@@ -4,7 +4,7 @@ variable "prefix" {
 
 stack "private-registry-stack" {
     source = "app.terraform.io/onboarding-terraform-andrian/private-registry-stack"
-    version = "1.3.0"
+    version = "1.2.0"
 
     inputs = {
         prefix = var.prefix
