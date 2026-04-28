@@ -1,5 +1,5 @@
 deployment "dev" {
   inputs = {
-    prefix = "test-1"
+    prefix = "test"
   }
 }
